@@ -126,6 +126,9 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    social-share-button (0.1.10)
+      coffee-rails
+      sass-rails
     spring (2.0.0)
       activesupport (>= 4.2)
     sprockets (3.7.0)
@@ -156,7 +159,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.3, >= 3.3.7)
+  bootstrap-sass (~> 3.3.5)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
@@ -166,6 +169,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  social-share-button (~> 0.1.10)
   spring
   sqlite3
   turbolinks

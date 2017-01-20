@@ -1,0 +1,74 @@
+$navbar-default-bg: #000000;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+#logo {
+    float: left;
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: italic;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/c2/74/50/c27450a58c8482bc62a07c8f0710a6ed.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-lg {
+    font-size: 1.7em;
+    background-color: #000000;
+    
+}
+
+.footer {
+    text-align: center;
+    background: #ffffff;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.social-share-button-facebook {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/social/facebook.png") no-repeat;
+}
+
+.social-share-button-github {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/social/github.png") no-repeat;
+}

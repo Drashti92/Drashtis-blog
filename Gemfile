@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 
 # Use SCSS for stylesheets
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -22,6 +22,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'social-share-button', '~> 0.1.10'
 
 
 
