@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'social-share-button', '~> 0.1.10'
 
+gem 'bcrypt', '~> 3.1.7'
+
 
 
 # Use ActiveModel has_secure_password
