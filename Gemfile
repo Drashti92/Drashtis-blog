@@ -27,6 +27,10 @@ gem 'social-share-button', '~> 0.1.10'
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'will_paginate', '3.0.7'
+
+gem 'bootstrap-will_paginate', '0.0.10'
+
 
 
 # Use ActiveModel has_secure_password
