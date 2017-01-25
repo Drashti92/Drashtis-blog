@@ -17,7 +17,6 @@
         <li><%= link_to "ARTICLES", articles_path %></li>
         <li><%= link_to 'USERS', users_path %></li>
         <li><%= link_to "New Article",  new_article_path(current_user)%></li>
-        
       </ul>
      <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
@@ -28,12 +27,26 @@
             <li><%= link_to "View your profile", user_path(current_user) %></li>
           </ul>
         </li>
+        
         <li><%= link_to 'LOG OUT', logout_path, method: :delete %></li>
         <% else %>
         <li><%= link_to 'LOG IN', login_path %></li>
         <li><%= link_to 'SIGN UP', signup_path %></li>
         <li><%= link_to 'ABOUT', about_path %></li>
         <% end %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "All Categories", categories_path %></li>
+            <% Category.all.each do |category| %>
+            <li><%= link_to "#{category.name}", category_path(category) %></li>
+            <% end %>
+            <% if logged_in? and current_user.admin? %>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to "Create New Category", new_category_path %></li>
+            <% end %>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
