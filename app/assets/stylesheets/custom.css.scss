@@ -24,6 +24,17 @@ $navbar-default-bg: #000000;
     height: 300px;
 }
 
+.img-circle {
+    margin-bottom: 0px;
+    background-image: asset-url('home.png');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 300px;
+}
+
 .center {
     text-align: center;
 }
@@ -59,12 +70,7 @@ $navbar-default-bg: #000000;
     transition: all .5s ease;
 }
 
-.social-share-button-facebook {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: url("/social/facebook.png") no-repeat;
-}
+
 
 .social-share-button-github {
   display: inline-block;
